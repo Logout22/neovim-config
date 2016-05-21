@@ -1,7 +1,3 @@
-call plug#begin()
+let s:vimconfigpath=fnamemodify(resolve(expand('<sfile>:p')), ":h")
 
-Plug 'tpope/vim-sensible'
-
-Plug 'scrooloose/nerdtree'
-
-call plug#end()
+execute "source ".s:vimconfigpath."/modules.vim"
