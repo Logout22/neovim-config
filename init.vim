@@ -7,3 +7,5 @@ execute "source ".s:vimconfigpath."/modules.vim"
 
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
+
+let g:neomake_cpp_enabled_makers = ['clang-tidy']

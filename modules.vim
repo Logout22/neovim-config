@@ -10,5 +10,6 @@ endfunction
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'critiqjo/lldb.nvim', { 'do': function('DoRemote') }
 Plug 'maxbrunsfeld/vim-yankstack'
+Plug 'neomake/neomake'
 
 call plug#end()
