@@ -14,5 +14,6 @@ Plug 'neomake/neomake'
 Plug 'eugen0329/vim-esearch'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'junegunn/fzf', { 'dir': '$HOME/.fzf', 'do': './install --all' }
 
 call plug#end()
