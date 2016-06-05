@@ -12,5 +12,7 @@ Plug 'critiqjo/lldb.nvim', { 'do': function('DoRemote') }
 Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'neomake/neomake'
 Plug 'eugen0329/vim-esearch'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 call plug#end()
