@@ -1,5 +1,8 @@
 let s:vimconfigpath=fnamemodify(resolve(expand('<sfile>:p')), ":h")
 
+let g:python_host_prog = "/usr/bin/python2"
+let g:python3_host_prog = "/usr/bin/python3"
+
 execute "source ".s:vimconfigpath."/modules.vim"
 
 " Use deoplete.
