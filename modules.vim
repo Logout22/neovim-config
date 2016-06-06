@@ -16,5 +16,6 @@ Plug 'eugen0329/vim-esearch'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'junegunn/fzf', { 'dir': '$HOME/.fzf', 'do': './install --all' }
+Plug 'embear/vim-localvimrc'
 
 call plug#end()
