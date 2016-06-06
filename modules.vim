@@ -9,6 +9,7 @@ function! DoRemote(arg)
 endfunction
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'critiqjo/lldb.nvim', { 'do': function('DoRemote') }
+Plug 'vim-scripts/Conque-GDB'
 Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'neomake/neomake'
 Plug 'eugen0329/vim-esearch'
