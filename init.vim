@@ -33,5 +33,5 @@ set gdefault
 set modelines=0
 
 " Setup local vimrc security
-let g:localvimrc_whitelist='$HOME/.*'
+let g:localvimrc_whitelist="/home/munzner/.*"
 let g:localvimrc_sandbox=0
