@@ -17,6 +17,9 @@ autocmd FileType make set noexpandtab
 autocmd FileType c set cindent
 autocmd FileType cpp set cindent
 
+" Set leader to ´
+let mapleader="´"
+
 " Opposite to J (Ctrl-J):
 nnoremap <C-J> a<CR><ESC>
 
