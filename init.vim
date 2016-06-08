@@ -8,8 +8,8 @@ execute "source ".s:vimconfigpath."/modules.vim"
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
 
-" Configure Neomake linters
-let g:neomake_cpp_enabled_makers = ['clang-tidy']
+" Run neomake after every buffer write
+autocmd BufWritePost * :Neomake
 
 " Tab and indention settings
 set smarttab expandtab shiftwidth=4 softtabstop=4 tabstop=4 autoindent
