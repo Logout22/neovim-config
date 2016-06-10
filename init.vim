@@ -40,3 +40,9 @@ set modelines=0
 " Setup local vimrc security
 let g:localvimrc_whitelist="/home/munzner/.*"
 let g:localvimrc_sandbox=0
+
+
+
+" TODO: Remove as soon as https://github.com/neovim/neovim/issues/4897 is fixed
+" See also https://github.com/eugen0329/vim-esearch/issues/2
+let g:esearch = extend(get(g:,'esearch', {}), {'backend':'vimproc'}, 'force')

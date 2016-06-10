@@ -18,4 +18,7 @@ Plug 'honza/vim-snippets'
 Plug 'junegunn/fzf', { 'dir': '$HOME/.fzf', 'do': './install --all' }
 Plug 'embear/vim-localvimrc'
 
+" TODO: Remove as soon as https://github.com/neovim/neovim/issues/4897 is fixed
+Plug 'Shougo/vimproc', { 'do': 'make' }
+
 call plug#end()
