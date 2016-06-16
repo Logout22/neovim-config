@@ -40,6 +40,12 @@ set ignorecase smartcase
 " Make g flag default (g flag in replacements means 'non-greedy' then):
 set gdefault
 
+" Configure vim-esearch:
+"  - enable regex
+let g:esearch = {
+            \ 'regex': 1,
+            \}
+
 " Disable modelines (security, workflow reasons)
 set modelines=0
 
