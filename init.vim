@@ -16,6 +16,9 @@ autocmd BufWritePost * :Neomake
 " Neomake: Enable clang-tidy for C++ as well
 let g:neomake_cpp_enabled_makers = ['clang', 'clangtidy']
 
+" Do not remove trailing spaces automatically
+let g:autoformat_remove_trailing_spaces = 0
+
 " Tab and indention settings
 set smarttab expandtab shiftwidth=4 softtabstop=4 tabstop=4 autoindent
 autocmd FileType make set noexpandtab
