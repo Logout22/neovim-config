@@ -13,8 +13,8 @@ autocmd BufWritePre * :Autoformat
 let g:autoformat_autoindent = 0
 " Run neomake after every buffer write
 autocmd BufWritePost * :Neomake
-" Neomake: Enable clang-tidy for C++ as well
-let g:neomake_cpp_enabled_makers = ['clang', 'clangtidy']
+" Neomake: Enable only clang-tidy for C++
+let g:neomake_cpp_enabled_makers = ['clangtidy']
 
 " Do not remove trailing spaces automatically
 let g:autoformat_remove_trailing_spaces = 0
