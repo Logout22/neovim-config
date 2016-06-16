@@ -8,8 +8,9 @@ execute "source ".s:vimconfigpath."/modules.vim"
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
 
-" Run automatic formatting before every buffer write
+" Run automatic formatting before every buffer write, but not the Vim default
 autocmd BufWritePre * :Autoformat
+let g:autoformat_autoindent = 0
 " Run neomake after every buffer write
 autocmd BufWritePost * :Neomake
 " Neomake: Enable clang-tidy for C++ as well
