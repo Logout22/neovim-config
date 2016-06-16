@@ -8,16 +8,10 @@ execute "source ".s:vimconfigpath."/modules.vim"
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
 
-" Run automatic formatting before every buffer write, but not the Vim default
-autocmd BufWritePre * :Autoformat
-let g:autoformat_autoindent = 0
 " Run neomake after every buffer write
 autocmd BufWritePost * :Neomake
 " Neomake: Enable only clang-tidy for C++
 let g:neomake_cpp_enabled_makers = ['clangtidy']
-
-" Do not remove trailing spaces automatically
-let g:autoformat_remove_trailing_spaces = 0
 
 " Tab and indention settings
 set smarttab expandtab shiftwidth=4 softtabstop=4 tabstop=4 autoindent
@@ -58,3 +52,12 @@ let g:localvimrc_sandbox=0
 " TODO: Remove as soon as https://github.com/neovim/neovim/issues/4897 is fixed
 " See also https://github.com/eugen0329/vim-esearch/issues/2
 let g:esearch = extend(get(g:,'esearch', {}), {'backend':'vimproc'}, 'force')
+
+
+" Template for lvimrc, cannot be enabled generally
+"" Run automatic formatting before every buffer write
+"autocmd BufWritePre * :Autoformat
+"" Do not use vim default indention
+"let g:autoformat_autoindent = 0
+"" Do not remove trailing spaces automatically
+"let g:autoformat_remove_trailing_spaces = 0
