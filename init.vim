@@ -34,8 +34,8 @@ nnoremap <C-C> :LL process interrupt<CR>
 nnoremap <F9> :LL print <C-R>=expand('<cword>')<CR><CR>
 vnoremap <F9> :<C-U>LL print <C-R>=lldb#util#get_selection()<CR><CR>
 nnoremap <C-N> :LL next<CR>
-nnoremap <S-S> :LL step<CR>
-nnoremap <S-F> :LL finish<CR>
+nnoremap <C-S> :LL step<CR>
+nnoremap <C-F> :LL finish<CR>
 nnoremap <F12> :LL stepi<CR>
 
 " Enable smart case-sensitive searches
