@@ -57,6 +57,9 @@ set modelines=0
 let g:localvimrc_whitelist=expand("~")."/.*"
 let g:localvimrc_sandbox=0
 
+" Set up solarized colour scheme
+set background=dark
+colorscheme solarized
 
 
 " TODO: Remove as soon as https://github.com/neovim/neovim/issues/4897 is fixed
