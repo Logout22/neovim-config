@@ -8,7 +8,6 @@ function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
-Plug 'critiqjo/lldb.nvim', { 'do': function('DoRemote') }
 Plug 'neomake/neomake'
 Plug 'eugen0329/vim-esearch'
 Plug 'SirVer/ultisnips'
