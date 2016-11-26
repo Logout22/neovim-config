@@ -10,8 +10,6 @@ let g:deoplete#enable_at_startup = 1
 
 " Run neomake after every buffer write
 autocmd BufWritePost * :Neomake
-" Neomake: Enable only clang-tidy for C++
-let g:neomake_cpp_enabled_makers = ['clangtidy']
 
 " Tab and indention settings
 set smarttab expandtab shiftwidth=4 softtabstop=4 tabstop=4 autoindent
