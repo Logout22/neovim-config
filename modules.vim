@@ -7,7 +7,8 @@ Plug 'tpope/vim-fugitive'
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'ervandew/supertab'
 Plug 'neomake/neomake'
 Plug 'eugen0329/vim-esearch'
 Plug 'SirVer/ultisnips'

@@ -5,8 +5,19 @@ let g:python3_host_prog = "/usr/bin/python3"
 
 execute "source ".s:vimconfigpath."/modules.vim"
 
-" Use deoplete.
+" Set up deoplete and UltiSnips
 let g:deoplete#enable_at_startup = 1
+set completeopt=menuone,preview
+let g:deoplete#sources = {}
+let g:deoplete#sources._ = ['file', 'buffer', 'tag', 'ultisnips']
+
+" Use tab as universal completion key
+let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+let g:UltiSnipsExpandTrigger="<TAB>"
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" Close the preview window automatically
+let g:SuperTabClosePreviewOnPopupClose = 1
 
 " Run neomake after every buffer write
 autocmd BufWritePost * :Neomake
@@ -48,14 +59,6 @@ let g:localvimrc_sandbox=0
 " Set up solarized colour scheme
 set background=dark
 colorscheme solarized
-
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
 
 " Template for lvimrc, cannot be enabled generally
 "" Run automatic formatting before every buffer write
