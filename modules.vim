@@ -17,7 +17,4 @@ Plug 'embear/vim-localvimrc'
 Plug 'Chiel92/vim-autoformat'
 Plug 'altercation/vim-colors-solarized'
 
-" TODO: Remove as soon as https://github.com/neovim/neovim/issues/4897 is fixed
-Plug 'Shougo/vimproc', { 'do': 'make' }
-
 call plug#end()

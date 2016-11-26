@@ -52,10 +52,6 @@ set background=dark
 colorscheme solarized
 
 
-" TODO: Remove as soon as https://github.com/neovim/neovim/issues/4897 is fixed
-" See also https://github.com/eugen0329/vim-esearch/issues/2
-let g:esearch = extend(get(g:,'esearch', {}), {'backend':'vimproc'}, 'force')
-
 
 " Template for lvimrc, cannot be enabled generally
 "" Run automatic formatting before every buffer write
