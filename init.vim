@@ -51,7 +51,13 @@ let g:localvimrc_sandbox=0
 set background=dark
 colorscheme solarized
 
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 
 " Template for lvimrc, cannot be enabled generally
 "" Run automatic formatting before every buffer write
