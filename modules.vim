@@ -17,5 +17,6 @@ Plug 'junegunn/fzf', { 'dir': '$HOME/.fzf', 'do': './install --all' }
 Plug 'embear/vim-localvimrc'
 Plug 'Chiel92/vim-autoformat'
 Plug 'altercation/vim-colors-solarized'
+Plug 'cohama/agit.vim'
 
 call plug#end()
