@@ -8,8 +8,6 @@ execute "source ".s:vimconfigpath."/modules.vim"
 " Set up deoplete and UltiSnips
 let g:deoplete#enable_at_startup = 1
 set completeopt=menuone,preview
-let g:deoplete#sources = {}
-let g:deoplete#sources._ = ['file', 'buffer', 'tag', 'ultisnips']
 
 " Use tab as universal completion key
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
