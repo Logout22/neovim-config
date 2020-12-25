@@ -30,9 +30,6 @@ autocmd FileType cpp set cindent
 " Set leader to ,
 let mapleader=","
 
-" Opposite to J (Ctrl-J):
-nnoremap <C-J> a<CR><ESC>
-
 " Create a mapping for FZF
 nnoremap <F4> :FZF<CR>
 
