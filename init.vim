@@ -54,8 +54,3 @@ set modelines=0
 " Set up solarized colour scheme
 set background=light
 colorscheme solarized
-
-" Run automatic formatting before every buffer write
-autocmd BufWritePre * :Autoformat
-" Do not use vim default indention
-let g:autoformat_autoindent = 0

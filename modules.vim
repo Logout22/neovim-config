@@ -14,7 +14,6 @@ Plug 'eugen0329/vim-esearch'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'junegunn/fzf', { 'dir': '$HOME/.fzf', 'do': './install --all' }
-Plug 'Chiel92/vim-autoformat'
 Plug 'altercation/vim-colors-solarized'
 
 call plug#end()
