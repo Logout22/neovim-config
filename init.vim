@@ -51,18 +51,11 @@ let g:esearch = {
 " Disable modelines (security, workflow reasons)
 set modelines=0
 
-" Setup local vimrc security
-let g:localvimrc_whitelist=expand("~")."/.*"
-let g:localvimrc_sandbox=0
-
 " Set up solarized colour scheme
 set background=light
 colorscheme solarized
 
-" Template for lvimrc, cannot be enabled generally
-"" Run automatic formatting before every buffer write
-"autocmd BufWritePre * :Autoformat
-"" Do not use vim default indention
-"let g:autoformat_autoindent = 0
-"" Do not remove trailing spaces automatically
-"let g:autoformat_remove_trailing_spaces = 0
+" Run automatic formatting before every buffer write
+autocmd BufWritePre * :Autoformat
+" Do not use vim default indention
+let g:autoformat_autoindent = 0
