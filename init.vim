@@ -55,7 +55,7 @@ let g:localvimrc_whitelist=expand("~")."/.*"
 let g:localvimrc_sandbox=0
 
 " Set up solarized colour scheme
-set background=dark
+set background=light
 colorscheme solarized
 
 " Template for lvimrc, cannot be enabled generally
