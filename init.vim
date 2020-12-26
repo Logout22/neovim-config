@@ -5,18 +5,10 @@ let g:python3_host_prog = "/usr/bin/python3"
 
 execute "source ".s:vimconfigpath."/modules.vim"
 
-" Set up deoplete and UltiSnips
+" Enable deoplete
 let g:deoplete#enable_at_startup = 1
 set completeopt=menuone,preview
-call deoplete#custom#option('sources', { '_': ['file', 'buffer', 'tag', 'ultisnips'] })
-
-" Use tab as universal completion key
-let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-let g:UltiSnipsExpandTrigger="<TAB>"
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-
-" Close the preview window automatically
-let g:SuperTabClosePreviewOnPopupClose = 1
+call deoplete#custom#option('sources', { '_': ['file', 'buffer', 'tag'] })
 
 " Run neomake after every buffer write
 autocmd BufWritePost * :Neomake
