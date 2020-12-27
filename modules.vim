@@ -11,6 +11,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'neomake/neomake'
 Plug 'eugen0329/vim-esearch'
 Plug 'junegunn/fzf', { 'dir': '$HOME/.fzf', 'do': './install --all' }
+Plug 'Chiel92/vim-autoformat'
 Plug 'altercation/vim-colors-solarized'
 
 call plug#end()
