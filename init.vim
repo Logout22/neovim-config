@@ -11,7 +11,13 @@ set completeopt=menuone,preview
 call deoplete#custom#option('sources', { '_': ['file', 'buffer', 'tag'] })
 
 " Run neomake after every buffer write
-autocmd BufWritePost * :Neomake
+fun! RunNeomake()
+    if &ft =~ 'c\|cpp\|rust'
+        return
+    endif
+    Neomake
+endfun
+autocmd BufWritePost * call RunNeomake()
 
 " Tab and indention settings
 set smarttab expandtab shiftwidth=4 softtabstop=4 tabstop=4 autoindent
