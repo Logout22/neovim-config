@@ -49,3 +49,6 @@ set modelines=0
 " Set up solarized colour scheme
 set background=light
 colorscheme solarized
+
+" Enable mouse navigation
+set mouse=ni
