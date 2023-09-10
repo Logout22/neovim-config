@@ -12,7 +12,8 @@ call deoplete#custom#option('sources', { '_': ['file', 'buffer', 'tag'] })
 
 " Disable (ancient and buggy) lacheck for TeX documents
 " This line could be extended by e.g. proselint, in case it is available.
-let b:neomake_tex_enabled_makers = ['chktex']
+let g:neomake_tex_enabled_makers = ['chktex']
+let g:neomake_python_enabled_makers = ['flake8']
 " Run neomake after every buffer write
 fun! RunNeomake()
     if &ft =~ 'c\|cpp\|rust'
