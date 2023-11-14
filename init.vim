@@ -5,11 +5,6 @@ let g:python3_host_prog = "/usr/bin/python3"
 
 execute "source ".s:vimconfigpath."/modules.vim"
 
-" Enable deoplete
-let g:deoplete#enable_at_startup = 1
-set completeopt=menuone,preview
-call deoplete#custom#option('sources', { '_': ['file', 'buffer', 'tag'] })
-
 " Disable (ancient and buggy) lacheck for TeX documents
 " This line could be extended by e.g. proselint, in case it is available.
 let g:neomake_tex_enabled_makers = ['chktex']

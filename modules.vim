@@ -7,7 +7,6 @@ Plug 'tpope/vim-fugitive'
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'neomake/neomake'
 Plug 'eugen0329/vim-esearch'
 Plug 'junegunn/fzf', { 'dir': '$HOME/.fzf', 'do': './install --all' }
